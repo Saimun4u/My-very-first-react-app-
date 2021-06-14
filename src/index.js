@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import faker from 'faker'
 
 const App = ()=>{
     return (
     <div className="ui comments container">
         <div className = "comment">
             <a href = "/" className = "avatar">
-                <img alt="avatar" src=""></img>    
+                <img alt="avatar" src={faker.image.avatar()}></img>    
             </a>
             <div className="content">
                 <a href = "/" className = "content">
